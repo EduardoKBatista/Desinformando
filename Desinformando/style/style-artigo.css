@@ -1,0 +1,210 @@
+/* Mantendo identidade da home */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 0;
+    color: #f59e0b;
+    background: linear-gradient(135deg,#0f172a,#020617);
+    background-size: 300% 300%;
+    animation: bodyFlow 18s cubic-bezier(0.4,0,0.2,1) infinite;
+}
+
+@keyframes bodyFlow {
+    0% {background-position:0% 50%}
+    50% {background-position:100% 50%}
+    100% {background-position:0% 50%}
+}
+
+header {
+    background: linear-gradient(180deg,#0f172a,#020617);
+    color: #f9fafb;
+    padding: 32px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+header h1 {
+    font-family: 'BBH Bogle', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #f59f0b;
+}
+/*Navegação*/
+nav {
+    position: relative; /* para o logo poder ser absoluto */
+    text-align: center; /* centraliza os links */
+    padding: 14px 20px;
+    background: rgba(255,255,255,0.04);
+    backdrop-filter: blur(12px);
+}
+/*Navegação*/
+nav a {
+    color: #e5e7eb;
+    margin-left: 18px; /* espaço entre links */
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 0.8;
+    transition: opacity 0.2s ease, color 0.2s ease;
+}
+/*Navegação*/
+nav a:hover {
+    opacity: 1;
+    color: #f59e0b;
+}
+/*Navegação*/
+nav .logo-nav {
+    position: absolute;
+    left: 20px; /* distância da esquerda */
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'BBH Bogle', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #f59e0b;
+    letter-spacing: 2px;
+}
+
+/*Navegação*/
+.links-nav a {
+    color: #e5e7eb;
+    margin: 0 14px; /* mesmo espaçamento que você tinha antes */
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 0.8;
+    transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+/*Navegação*/
+.links-nav a:hover {
+    opacity: 1;
+    color: #f59e0b;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+article {
+    background: #f9fafb;
+    color: #111827;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 28px 55px rgba(0,0,0,0.45);
+}
+
+article h2 {
+    margin-top: 0;
+    color: #020617;
+    letter-spacing: 2px;
+    font-family: "Bebas Neue";
+}
+
+.categoria {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #be123c;
+    background: rgba(190,18,60,0.12);
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin-bottom: 12px;
+}
+
+.ad {
+    background: rgba(255,255,255,0.1);
+    color: #f9fafb;
+    border: 1px dashed rgba(255,255,255,0.3);
+    text-align: center;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 12px;
+    font-size: 0.9rem;
+}
+/*Rodape*/
+footer {
+    background: rgba(2,6,23,0.85);
+    color: #9ca3af;
+    text-align: center;
+    padding: 22px;
+    margin-top: 60px;
+    font-size: 14px;
+}
+/* Container do artigo - modo leitura */
+.container-article {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #f9fafb; /* texto claro sobre fundo escuro */
+    line-height: 1.8;
+}
+
+/* Categoria */
+.container-article .categoria {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #f59e0b;
+    background: rgba(245,158,11,0.15);
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+}
+
+/* Título do artigo */
+.titulo-artigo {
+    font-family: 'Bebas Neue', sans-serif; /* cursive é fallback só caso não carregue */
+    font-weight: 400; /* essencial, porque Bebas Neue só tem regular */
+    font-size: 2.8rem;
+    color: #f59e0b;
+    letter-spacing: 1px;
+}
+
+
+
+
+/* Meta do artigo */
+.meta-artigo {
+    font-size: 0.9rem;
+    color: #e5e7eb;
+    margin-bottom: 30px;
+}
+
+/* Parágrafos */
+.container-article p {
+    margin-bottom: 22px;
+}
+
+/* Ads */
+.ad {
+    background: rgba(255,255,255,0.05);
+    border: 1px dashed rgba(245,158,11,0.4);
+    text-align: center;
+    padding: 18px;
+    margin: 28px 0;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    color: #f9fafb;
+}
+
+/* Mantendo fundo animado da home */
+body {
+    background: linear-gradient(135deg,#0f172a,#020617);
+    background-size: 300% 300%;
+    animation: bodyFlow 18s cubic-bezier(0.4,0,0.2,1) infinite;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+

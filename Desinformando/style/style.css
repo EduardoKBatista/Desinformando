@@ -14,6 +14,11 @@ body {
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 header {
   background:
     linear-gradient(
@@ -27,7 +32,13 @@ header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-
+header h1 {
+    font-family: 'BBH Bogle', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #f59f0b;
+}
 
 
 header h1::after {
@@ -41,25 +52,49 @@ header h1::after {
 
 /* NAV */
 nav {
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(12px);
-  padding: 14px;
-  text-align: center;
+    position: relative; /* para o logo poder ser absoluto */
+    text-align: center; /* centraliza os links */
+    padding: 14px 20px;
+    background: rgba(255,255,255,0.04);
+    backdrop-filter: blur(12px);
 }
 
 nav a {
-  color: #e5e7eb;
-  margin: 0 14px;
-  text-decoration: none;
-  font-weight: 500;
-  opacity: 0.8;
-  transition: opacity 0.2s ease, color 0.2s ease;
+    color: #e5e7eb;
+    margin-left: 18px; /* espaço entre links */
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 0.8;
+    transition: opacity 0.2s ease, color 0.2s ease;
 }
 
 nav a:hover {
-  opacity: 1;
-  color: #f59e0b; 
+    opacity: 1;
+    color: #f59e0b;
 }
+
+nav .logo-nav {
+    position: absolute;
+    left: 20px; /* distância da esquerda */
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'BBH Bogle', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #f59e0b;
+    letter-spacing: 2px;
+}
+
+.links-nav a {
+    color: #e5e7eb;
+    margin: 0 14px; /* mesmo espaçamento que você tinha antes */
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 0.8;
+    transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+
 
 /* CONTAINER */
 .container {
@@ -70,8 +105,8 @@ nav a:hover {
 
 /* ARTICLE */
 article {
-  background: #f9fafb;
-  color: #111827;
+  background: rgba(255, 255, 255, 0.04); /* mesmo estilo do nav */
+  color: #f9fafb;
   padding: 28px;
   margin-bottom: 28px;
   border-radius: 16px;
@@ -86,7 +121,7 @@ article:hover {
 
 article h2 {
   margin-top: 0;
-  color: #020617;
+  color: #f9fafb;
 }
 
 /* CATEGORIA */
@@ -94,8 +129,8 @@ article h2 {
   display: inline-block;
   font-size: 13px;
   font-weight: 600;
-  color: #be123c;
-  background: rgba(190, 18, 60, 0.12);
+  color:#f59e0b;
+  background: rgba(202, 106, 16, 0.12);
   padding: 4px 12px;
   border-radius: 999px;
   margin-bottom: 12px;
